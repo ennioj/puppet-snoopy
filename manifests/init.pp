@@ -3,8 +3,8 @@
 # Puppet snoopy module.
 # Based on rentabiliweb-sample module.
 #
-class snoopy ($package = true, $service = true, $enable = true,) {
-  # Include supervisor::params
+class snoopy ($package = true, $service = true) {
+  # Include snoopy::params
   include snoopy::params
 
   $snoopy_package_name = $snoopy::params::snoopy_package_name
