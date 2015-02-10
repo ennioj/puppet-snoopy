@@ -23,13 +23,22 @@ class snoopy ($package = true, $service = true) {
     default : { fail('service must be true or false') }
   }
 
-  package { $snoopy_package_name: ensure => present, }
+  package { $snoopy_package_name: ensure => $ensure_package, }
 
   if $service == true {
-    file_line { 'snoopy':
+    file { '/etc/ld.so.preload':
       ensure => $ensure_service,
       path   => '/etc/ld.so.preload',
-      line   => $snoopy_lib_path,
+      owner  => 'root',
+      group  => 'root',
+      mode   => '0644',
+    }
+
+    file_line { 'snoopy':
+      ensure  => $ensure_service,
+      path    => '/etc/ld.so.preload',
+      line    => $snoopy_lib_path,
+      require => File['/etc/ld.so.preload'],
     }
   }
 }
