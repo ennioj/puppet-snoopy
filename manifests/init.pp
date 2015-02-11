@@ -36,8 +36,8 @@ class snoopy ($package = true, $service = true) {
 
     file_line { 'snoopy':
       ensure  => $ensure_service,
-      path    => '/etc/ld.so.preload',
       line    => $snoopy_lib_path,
+      path    => '/etc/ld.so.preload',
       require => File['/etc/ld.so.preload'],
     }
   }
