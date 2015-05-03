@@ -1,6 +1,6 @@
 {
   "name": "rentabiliweb-snoopy",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Rentabiliweb",
   "license": "ISC",
   "summary": "Rentabiliweb snoopy module",
@@ -11,11 +11,11 @@
   "project_page": "https://github.com/rentabiliweb/puppet-snoopy",
   "issues_url": "https://github.com/rentabiliweb/puppet-snoopy/issues",
   "operatingsystem_support": [
-   	{ "operatingsystem": "Debian", "operatingsystemrelease": [ "5.0", "6.0", "7.0" ] },
-	{ "operatingsystem": "Ubuntu", "operatingsystemrelease": [ "10.04", "12.04", "14.04" ] },
-	{ "operatingsystem": "RedHat", "operatingsystemrelease": [ "5.0", "6.0" ] }
+   	{ "operatingsystem": "Debian", "operatingsystemrelease": [ "5", "6", "7", "8" ] },
+	{ "operatingsystem": "Ubuntu", "operatingsystemrelease": [ "12.04", "12.10", "13.04", "13.10", "14.04", "14.10", "15.04" ] },
+	{ "operatingsystem": "RedHat", "operatingsystemrelease": [ "5", "6" ] }
   ],
-  "tags": [ "puppet", "snoopy", "log", "security", "rentabiliweb" ],
+  "tags": [ "puppet", "snoopy", "log", "syslog", "audit", "security", "rentabiliweb" ],
   "requirements": [
     { "name": "puppet", "version_requirement": "3.x" }
   ] 
