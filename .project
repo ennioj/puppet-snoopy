@@ -3,6 +3,7 @@
 	<name>snoopy</name>
 	<comment></comment>
 	<projects>
+		<project>stdlib</project>
 	</projects>
 	<buildSpec>
 	</buildSpec>
