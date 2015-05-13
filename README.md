@@ -1,6 +1,8 @@
-#rentabiliweb-snoopy
+# rentabiliweb-snoopy
 
-####Table of Contents
+[![Build Status](https://travis-ci.org/rentabiliweb/puppet-snoopy.svg?branch=master)](https://travis-ci.org/rentabiliweb/puppet-snoopy)
+
+#### Table of Contents
 
 1. [Overview](#overview)
 2. [Module Description](#module-description)
@@ -10,24 +12,24 @@
     * [Uninstall](#uninstall)
 5. [Development](#development)
 
-##Overview
+## Overview
 
 The rentabiliweb-snoopy module  enables you to install,  deploy, and configure
 snoopy.
 
-##Module Description
+## Module Description
 
 Snoopy sends every executed command to syslog.
 
 https://github.com/a2o/snoopy
 
-##Setup
+## Setup
 
 ```puppet
 include snoopy
 ```
 
-##Usage
+## Usage
 
 You can configure all options in the main class.
 
@@ -48,7 +50,7 @@ class { 'snoopy':
 }
 ```
 
-##Development
+## Development
 
 Rentabiliweb  modules on  the  Puppet  Forge are  open  projects, and  community
 contributions are  essential for keeping  them great.  We can’t access  the huge

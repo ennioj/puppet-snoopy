@@ -1,6 +1,6 @@
 {
   "name": "rentabiliweb-snoopy",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Rentabiliweb",
   "license": "ISC",
   "summary": "Rentabiliweb snoopy module",
@@ -18,5 +18,5 @@
   "tags": [ "puppet", "snoopy", "log", "syslog", "audit", "security", "rentabiliweb" ],
   "requirements": [
     { "name": "puppet", "version_requirement": "3.x" }
-  ] 
+  ]
 }
