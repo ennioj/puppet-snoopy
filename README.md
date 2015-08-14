@@ -1,5 +1,13 @@
 # rentabiliweb-snoopy ![License badge][license-img] [![Puppet badge][puppet-img]][puppet-url]
 
+#### Table of Contents
+
+1. [Overview](#overview)
+2. [Module Description](#module-description)
+3. [Setup](#setup)
+4. [Usage](#usage)
+5. [Development](#development)
+
 ## Overview
 
 The rentabiliweb-snoopy module  enables you to install,  deploy, and configure
