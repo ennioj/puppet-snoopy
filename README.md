@@ -1,16 +1,4 @@
-# rentabiliweb-snoopy
-
-[![Build Status](https://travis-ci.org/rentabiliweb/puppet-snoopy.svg?branch=master)](https://travis-ci.org/rentabiliweb/puppet-snoopy)
-
-#### Table of Contents
-
-1. [Overview](#overview)
-2. [Module Description](#module-description)
-3. [Setup](#setup)
-4. [Usage](#usage)
-    * [Install](#install)
-    * [Uninstall](#uninstall)
-5. [Development](#development)
+# rentabiliweb-snoopy ![License badge][license-img] [![Puppet badge][puppet-img]][puppet-url]
 
 ## Overview
 
@@ -59,3 +47,7 @@ configurations that  Puppet is intended to  serve so feel free  to contribute on
 GitHub.
 
 Thanks https://github.com/puppetlabs/ for help to write this README :)
+
+[license-img]: https://img.shields.io/badge/licence-ISC-blue.svg "Licence"
+[puppet-img]: https://img.shields.io/puppetforge/dt/rentabiliweb/snoopy.svg "Puppet Forge"
+[puppet-url]: https://forge.puppetlabs.com/rentabiliweb/snoopy "Puppet Forge"
