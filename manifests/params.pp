@@ -1,7 +1,5 @@
 # == Class: snoopy::params
 #
-# This is a container class holding default parameters for snoopy class.
-#
 class snoopy::params {
   case $::operatingsystem {
     /(Debian|Ubuntu)/        : {
