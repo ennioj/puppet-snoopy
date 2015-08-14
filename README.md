@@ -49,7 +49,7 @@ class { 'snoopy':
 ## Development
 
 Rentabiliweb  modules on  the  Puppet  Forge are  open  projects, and  community
-contributions are  essential for keeping  them great.  We can’t access  the huge
+contributions are  essential for keeping  them great.  We can't access  the huge
 number  of   platforms  and  myriad   of  hardware,  software,   and  deployment
 configurations that  Puppet is intended to  serve so feel free  to contribute on
 GitHub.
