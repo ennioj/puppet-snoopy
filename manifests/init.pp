@@ -1,7 +1,6 @@
 # == Class: snoopy
 #
 class snoopy ($package = true, $service = true) {
-  # Include snoopy::params
   include snoopy::params
 
   $snoopy_package_name = $snoopy::params::snoopy_package_name
