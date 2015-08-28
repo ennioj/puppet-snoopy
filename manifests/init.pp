@@ -39,7 +39,6 @@ class snoopy ($package = true, $service = true) {
       content => template('snoopy/debconf.snoopy.preseed.erb'),
     }
 
-    # à affiner pour que ça marche hors galaxie Debian
     exec { 'reconfigure':
       command     => "/usr/bin/debconf-set-selections /tmp/debconf.snoopy.preseed; /usr/sbin/dpkg-reconfigure -fnoninteractive ${snoopy_package_name}",
       refreshonly => true,
