@@ -27,13 +27,13 @@ class snoopy ($package = true, $service = true) {
     package { $snoopy_package_name:
       ensure       => $ensure_package,
       alias        => 'snoopy',
-      responsefile => '/var/local/debconf.snoopy.preseed',
+      responsefile => '/tmp/debconf.snoopy.preseed',
       require      => File['debconf.snoopy.preseed'],
     }
 
-    file { 'debconf.snoopy.preseed':
+    file { '/tmp/debconf.snoopy.preseed':
       ensure  => present,
-      path    => '/var/local/debconf.snoopy.preseed',
+      path    => '/tmp/debconf.snoopy.preseed',
       mode    => '0400',
       owner   => 'root',
       content => template('snoopy/debconf.snoopy.preseed.erb'),
@@ -41,7 +41,7 @@ class snoopy ($package = true, $service = true) {
 
     # à affiner pour que ça marche hors galaxie Debian
     exec { 'reconfigure':
-      command     => "/usr/bin/debconf-set-selections /var/local/debconf.snoopy.preseed; /usr/sbin/dpkg-reconfigure -fnoninteractive ${snoopy_package_name}",
+      command     => "/usr/bin/debconf-set-selections /tmp/debconf.snoopy.preseed; /usr/sbin/dpkg-reconfigure -fnoninteractive ${snoopy_package_name}",
       refreshonly => true,
       subscribe   => File['debconf.snoopy.preseed'],
       require     => Package['snoopy'],
