@@ -31,7 +31,7 @@ class snoopy ($package = true, $service = true) {
       require      => File['debconf.snoopy.preseed'],
     }
 
-    file { '/tmp/debconf.snoopy.preseed':
+    file { 'debconf.snoopy.preseed':
       ensure  => present,
       path    => '/tmp/debconf.snoopy.preseed',
       mode    => '0400',
